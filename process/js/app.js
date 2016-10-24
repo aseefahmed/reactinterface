@@ -1,30 +1,49 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
+var NewAptList = require('./aptList');
+var _ = require('lodash');
+var MyNewAppointment123 = require('./addMyAppointments');
 
 var MainInterface = React.createClass({
 	getInitialState: function(){
 		return {
-			title: 'OK Appointment',
-			show: true
+			data: []
 		}
 	},
-	render: function(){
-		var showTitle;
-		if(this.state.show)
-			showTitle = 'NEW';
+	deleteThisItemNow: function(item){
+		var allLists = this.state.data;
+		var newList = _.without(allLists, item)
+		this.setState({
+			data: newList
+		});
 
-		var DisplayListt = {
-			display: this.state.show? 'block': 'none',
-			color: 'red'
-		}
+	},
+	componentDidMount: function(){
+		this.serverRequest = $.get('./js/data.json', function(result){
+			this.setState({
+				data: result
+			});
+		}.bind(this));
+	},
+	componentWillUnmount: function(){
+		this.serverRequest.abort();
+	},
+	render: function(){
+		var appointments = this.state.data;
+		var listAppointments = appointments.map(function(item, index){
+					return (
+						<NewAptList key={index} myApt={item}
+								removedItem={item}
+									onDelete={this.deleteThisItemNow}/>
+					)
+				}.bind(this));
+
 		return (
+
 				<div className='interface'>
-					<h1>{showTitle} {this.state.title}</h1>
-					<ul style={DisplayListt}>
-						<li>aseef</li>
-						<li>saeef</li>
-						<li>rifa</li>
+					<MyNewAppointment123/>
+					<ul className='item-list media-list'>
+						{listAppointments}
 					</ul>
 				</div>
 			)
