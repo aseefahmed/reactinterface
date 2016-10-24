@@ -1,12 +1,19 @@
 var React = require('react');
 
 var NewAppointmentForToday111 = React.createClass({
+    handleToggle: function(){
+      this.props.doToggle();
+    },
     render: function(){
+        var styleDisplay = {
+            display: this.props.showDiv? 'block': 'none'
+        };
+
         return (
             <div  className="panel panel-primary">
-            <div  className="panel-heading apt-addheading">
+            <div  className="panel-heading apt-addheading" onClick={this.handleToggle}>
             <span  className="glyphicon glyphicon-plus"></span> Add Appointment</div>
-        <div  className="panel-body">
+        <div  className="panel-body" style={styleDisplay}>
             <form  className="add-appointment form-horizontal">
             <div  className="form-group">
             <label  className="col-sm-2 control-label" for="petName">Pet Name</label>

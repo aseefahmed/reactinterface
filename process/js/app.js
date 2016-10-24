@@ -7,6 +7,7 @@ var MyNewAppointment123 = require('./addMyAppointments');
 var MainInterface = React.createClass({
 	getInitialState: function(){
 		return {
+			formVisibility: false,
 			data: []
 		}
 	},
@@ -25,8 +26,14 @@ var MainInterface = React.createClass({
 			});
 		}.bind(this));
 	},
-	componentWillUnmount: function(){
+	componentWillUnnmount: function(){
 		this.serverRequest.abort();
+	},
+	actToggle: function(){
+		var apt = !this.state.formVisibility;
+		this.setState({
+			formVisibility: apt
+		});
 	},
 	render: function(){
 		var appointments = this.state.data;
@@ -41,7 +48,7 @@ var MainInterface = React.createClass({
 		return (
 
 				<div className='interface'>
-					<MyNewAppointment123/>
+					<MyNewAppointment123 showDiv={this.state.formVisibility} doToggle={this.actToggle}/>
 					<ul className='item-list media-list'>
 						{listAppointments}
 					</ul>
