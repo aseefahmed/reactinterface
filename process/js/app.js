@@ -26,6 +26,15 @@ var MainInterface = React.createClass({
 			});
 		}.bind(this));
 	},
+	addAppointment: function(item){
+		var prevAppt = this.state.data;
+		prevAppt.push(item);
+		this.setState(
+			{
+				data: prevAppt
+			}
+		)
+	},
 	componentWillUnnmount: function(){
 		this.serverRequest.abort();
 	},
@@ -48,7 +57,7 @@ var MainInterface = React.createClass({
 		return (
 
 				<div className='interface'>
-					<MyNewAppointment123 showDiv={this.state.formVisibility} doToggle={this.actToggle}/>
+					<MyNewAppointment123 showDiv={this.state.formVisibility} doToggle={this.actToggle} addItem={this.addAppointment}/>
 					<ul className='item-list media-list'>
 						{listAppointments}
 					</ul>

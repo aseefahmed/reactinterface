@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285f4e74-7d9b-44c9-ba64-7334e07fbb64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/app/index.html" afterPath="$PROJECT_DIR$/builds/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/app/js/app.js" afterPath="$PROJECT_DIR$/builds/app/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process/js/addMyAppointments.js" afterPath="$PROJECT_DIR$/process/js/addMyAppointments.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process/js/app.js" afterPath="$PROJECT_DIR$/process/js/app.js" />
@@ -51,7 +48,7 @@
       <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/app/js/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="360">
               <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding />
             </state>
@@ -61,8 +58,8 @@
       <file leaf-file-name="addMyAppointments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process/js/addMyAppointments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="87">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -71,8 +68,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+            <state relative-caret-position="92">
+              <caret line="59" column="110" selection-start-line="59" selection-start-column="103" selection-end-line="59" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -101,8 +98,8 @@
         <option value="$PROJECT_DIR$/process/js/aptList.js" />
         <option value="$PROJECT_DIR$/builds/app/index.html" />
         <option value="$PROJECT_DIR$/builds/app/js/app.js" />
-        <option value="$PROJECT_DIR$/process/js/addMyAppointments.js" />
         <option value="$PROJECT_DIR$/process/js/app.js" />
+        <option value="$PROJECT_DIR$/process/js/addMyAppointments.js" />
       </list>
     </option>
   </component>
@@ -127,9 +124,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="721" />
+    <option name="x" value="183" />
+    <option name="y" value="43" />
+    <option name="width" value="910" />
+    <option name="height" value="476" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -296,19 +294,19 @@
       <updated>1477192230603</updated>
       <workItem from="1477192231774" duration="3526000" />
       <workItem from="1477277710696" duration="5183000" />
-      <workItem from="1477328251997" duration="1147000" />
+      <workItem from="1477328251997" duration="2477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9856000" />
+    <option name="totallyTimeSpent" value="11186000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="721" extended-state="6" />
+    <frame x="183" y="43" width="910" height="476" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2901099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -409,14 +407,6 @@
       </provider>
     </entry>
     <entry file="file:///Applications/MAMP/htdocs/evoneur/gulpfile.js" />
-    <entry file="file://$PROJECT_DIR$/builds/app/js/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/builds/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -430,18 +420,10 @@
         <state relative-caret-position="-47">
           <caret line="37636" column="77" selection-start-line="37636" selection-start-column="77" selection-end-line="37636" selection-end-column="77" />
           <folding>
-            <marker date="1477329386917" expanded="true" signature="1259094:1259224" ph="{...}" />
-            <marker date="1477329386917" expanded="true" signature="1259177:1259224" ph="{&quot;displayName&quot;: &quot;NewAppointmentForToday111&quot;...}" />
-            <marker date="1477329386917" expanded="true" signature="1259242:1259252" ph="{...}" />
+            <marker date="1477331632095" expanded="true" signature="1259094:1259224" ph="{...}" />
+            <marker date="1477331632095" expanded="true" signature="1259177:1259224" ph="{&quot;displayName&quot;: &quot;NewAppointmentForToday111&quot;...}" />
+            <marker date="1477331632095" expanded="true" signature="1259242:1259252" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/js/addMyAppointments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -453,10 +435,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/builds/app/js/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/js/addMyAppointments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/process/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        <state relative-caret-position="92">
+          <caret line="59" column="110" selection-start-line="59" selection-start-column="103" selection-end-line="59" selection-end-column="110" />
           <folding />
         </state>
       </provider>

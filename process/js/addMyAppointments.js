@@ -4,6 +4,17 @@ var NewAppointmentForToday111 = React.createClass({
     handleToggle: function(){
       this.props.doToggle();
     },
+    handleSubmit: function(e){
+        e.preventDefault();
+        var items = this.props.addItem({
+            petName: this.refs.inputPetName.value,
+            ownerName: this.refs.inputOwnerName.value,
+            aptData: this.refs.inputAptDate.value + ' ' + this.refs.inputAptTime.value,
+            aptNote: this.refs.inputAptNotes.value
+        });
+
+        this.props.addItem(items);
+    },
     render: function(){
         var styleDisplay = {
             display: this.props.showDiv? 'block': 'none'
@@ -14,7 +25,7 @@ var NewAppointmentForToday111 = React.createClass({
             <div  className="panel-heading apt-addheading" onClick={this.handleToggle}>
             <span  className="glyphicon glyphicon-plus"></span> Add Appointment</div>
         <div  className="panel-body" style={styleDisplay}>
-            <form  className="add-appointment form-horizontal">
+            <form  className="add-appointment form-horizontal"  onSubmit={this.handleSubmit}>
             <div  className="form-group">
             <label  className="col-sm-2 control-label" for="petName">Pet Name</label>
         <div  className="col-sm-10">
